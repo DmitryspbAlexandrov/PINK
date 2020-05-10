@@ -13,7 +13,7 @@ module.exports = {
       scripts: dirs.src + 'js/',
       images: {
         all: dirs.src + 'img/',
-        icons: dirs.src + 'img/icons/',
+        icons: dirs.src + 'img/ico/',
         content: dirs.src + 'img/content/',
         background: dirs.src + 'img/backgounds'
       },

@@ -1,5 +1,10 @@
+//main
 @import "./partials/variables";
 @import "./partials/_mixins";
 @import "./partials/common";
 @import "./partials/font";
 @import "./partials/normalize";
+
+//index
+@import "./bloks/page";
+@import "./bloks/header";
