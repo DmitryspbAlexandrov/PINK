@@ -219,22 +219,28 @@
   </svg>
 
     <header class="page__header header">
-      <a class="header__logo" id="page__top">
-       <svg class="header__logo--mobile" height="22" width="75">
-         <use xlink:href="#icon-logo--mobile"></use>
-       </svg>
-       <svg class="header__logo--tablet" height="40" width="147">
-         <use xlink:href="#icon-logo--tablet"></use>
-       </svg>
-       <svg class="header__logo--desctop" height="40" width="147">
-         <use xlink:href="#icon-logo--desctop"></use>
-       </svg>
-      </a>
+      <!--header--open to opened menu-->
+      <div class="header--wrapper">
+        <div class="header__top">
+          <!--header__top--open when menu open-->
+          <a class="header__logo" id="page__top">
+            <svg class="header__logo--mobile" height="22" width="75">
+              <use xlink:href="#icon-logo--mobile"></use>
+            </svg>
+            <svg class="header__logo--tablet" height="40" width="147">
+              <use xlink:href="#icon-logo--tablet"></use>
+            </svg>
+            <svg class="header__logo--desctop" height="40" width="147">
+              <use xlink:href="#icon-logo--desctop"></use>
+            </svg>
+          </a>
+          <button class="menu__toggle menu__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <!--menu__toggle--closed button state -->
+        </div>
 
-      <nav class="header__menu menu">
-        <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="menu__nav--wrapper">
-          <ul class="menu__list">
+        <nav class="header__menu menu">
+          <ul class="menu__list menu__list--closed">
+            <!--menu__list--closed close state-->
             <li class="menu__item menu__item--current">
               <a class="menu__link">Главная</a>
             </li>
@@ -248,8 +254,8 @@
               <a href="https://htmlacademy.ru/" class="menu__link">HTML Academy</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page__main">

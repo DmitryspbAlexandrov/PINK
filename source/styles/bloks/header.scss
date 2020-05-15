@@ -1,24 +1,35 @@
 .header {
-  width: 320px;
+  position: relative;
+  width: 100%;
   min-height: 462px;
   padding: 0;
   margin: 0 auto;
   color: $font-color--menu;
-  background-image: url("../img/backgrounds/back-intro--mobile.jpg")
+  background-color: #283645;
 }
 
-.header__menu {
-  padding: 0;
-  margin: 0;
-  background-color: #000000;
-  opacity: 0.3;
+.header--wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header__top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header__top--open {
+  height: 69px;
+  background-color: #283645;
+  border-bottom: 1px solid #000000;
 }
 
 .header__logo {
   display: block;
   width: 75px;
-  height: 22px;
-  margin: 20px;
+  margin: 0;
   cursor: pointer;
 }
 
@@ -30,10 +41,60 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
 
   .header {
-    width: 768px;
+    background-image: url("../img/backgrounds/back--mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 760px 462px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 65px;
+      width: 256px;
+      height: 285px;
+      background-image: url("../img/backgrounds/hand--mobile.png");
+      background-repeat: no-repeat;
+      background-size: 256px 285px;
+    }
+  }
+
+  .header--open {
+    min-height: 722px;
+    background-position: center 260px;
+  }
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+
+    .header {
+      background-image: url("../img/backgrounds/back--mobile@2x.jpg");
+
+      &::after {
+        background-image: url("../img/backgrounds/hand--mobile@2x.png");
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .header__top {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    align-items: flex-end;
+  }
+
+  .header__top--open {
+    height: 110px;
+  }
+
+  .header__logo {
+    width: 147px;
+    height: 40px;
   }
 
   .header__logo--mobile {
@@ -48,10 +109,72 @@
 
 }
 
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+
+  .header {
+    min-height: 729px;
+    background-image: url("../img/backgrounds/back--tablet.jpg");
+    background-size: 1200px 729px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 25px;
+      width: 660px;
+      height: 545px;
+      background-image: url("../img/backgrounds/hand--tablet.png");
+      background-repeat: no-repeat;
+      background-size: 660px 545px;
+    }
+  }
+
+  .header--open {
+    min-height: 984px;
+  }
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+
+    .header {
+      background-image: url("../img/backgrounds/back--tablet@2x.jpg");
+
+      &::after {
+        background-image: url("../img/backgrounds/hand--tablet@2x.png");
+      }
+    }
+  }
+
+}
+
 @media (min-width: $desctop-width) {
 
   .header {
-    width: 1200px;
+    max-width: 1200px;
+    min-height: 853px;
+    background-image: url("../img/backgrounds/back-intro--desc.jpg");
+    background-size: 1200px auto;
+    background-position: center top;
+
+    &::after{
+      display: none;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/back-intro--desc@2x.jpg");
+    }
+  }
+
+  .header--wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .header__top {
+    max-width: 960px;
+    padding: 30px 10px 40px 10px;
   }
 
   .header__logo--tablet {
