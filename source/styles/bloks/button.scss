@@ -1,0 +1,30 @@
+.button--download {
+  display: block;
+  width: 280px;
+  height: 56px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+
+  .button--download {
+    width: 300px;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
+  .button--download {
+    font-size: 21px;
+  }
+
+}

@@ -1,0 +1,26 @@
+.info {
+  min-width: 100%;
+  padding: 45px 20px 120px;
+}
+
+.info__title {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.info__title--first {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.info__title--second {
+  display: block;
+  margin-bottom: 120px;
+}
+
+.info__list {
+  list-style: none;
+}

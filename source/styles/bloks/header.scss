@@ -31,6 +31,18 @@
   width: 75px;
   margin: 0;
   cursor: pointer;
+
+  &--mobile {
+    fill: $logo-color;
+  }
+
+  &:hover .header__logo--mobile {
+    fill: $logo-color--hover;
+  }
+
+  &:active .header__logo--mobile {
+    fill: $logo-color--active;
+  }
 }
 
 .header__logo--tablet {
@@ -95,6 +107,18 @@
   .header__logo {
     width: 147px;
     height: 40px;
+
+    &--tablet {
+      fill: $logo-color;
+    }
+
+    &:hover .header__logo--tablet {
+      fill: $logo-color--hover;
+    }
+
+    &:active .header__logo--tablet {
+      fill: $logo-color--active;
+    }
   }
 
   .header__logo--mobile {
@@ -115,6 +139,7 @@
     min-height: 729px;
     background-image: url("../img/backgrounds/back--tablet.jpg");
     background-size: 1200px 729px;
+    background-position: center top;
 
     &::after {
       content: '';
@@ -177,13 +202,27 @@
     padding: 30px 10px 40px 10px;
   }
 
+  .header__logo {
+
+    &--desctop {
+      display: block;
+      width: 147px;
+      height: 40px;
+      fill: $logo-color;
+      color: $logo-color--hover;
+    }
+
+    &:hover .header__logo--desctop {
+      fill: $logo-color--hover;
+    }
+
+    &:active .header__logo--desctop {
+      fill: $logo-color--active;
+    }
+  }
+
   .header__logo--tablet {
     display: none;
   }
 
-  .header__logo--desctop {
-    display: block;
-    width: 147px;
-    height: 40px;
-  }
 }

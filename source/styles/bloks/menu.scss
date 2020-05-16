@@ -30,23 +30,54 @@
                 0px 14px 0px 0px transparent,
                 0px 18px 0px 0px rgba(255, 255, 255, 1);
   }
+
+  &:hover::before {
+    background-color: $hover-color;
+    box-shadow: 0px 5px 0px 0px transparent,
+    0px 9px 0px 0px $hover-color,
+    0px 14px 0px 0px transparent,
+    0px 18px 0px 0px $hover-color;
+  }
+
+  &:active::before {
+    background-color: $active-color;
+    box-shadow: 0px 5px 0px 0px transparent,
+    0px 9px 0px 0px $active-color,
+    0px 14px 0px 0px transparent,
+    0px 18px 0px 0px $active-color;
+  }
 }
 
 .menu__toggle--closed {
+
+  width: 25px;
+
   &::before,
   &::after {
     content: '';
     position: absolute;
+    top: 10px;
+    left: 0;
     width: 30px;
     height: 4px;
     background-color: #ffffff;
   }
 
   &::before {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
   }
   &::after {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color:$hover-color;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $active-color;
   }
 }
 
@@ -81,6 +112,14 @@
   color: inherit;
   text-decoration: none;
   background-color: #283645;
+
+  &:hover {
+    color: $hover-color;
+  }
+
+  &:active {
+    background-color: #304862;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -109,6 +148,10 @@
   .menu__item {
     width: auto;
     border: none;
+  }
+
+  .menu__item--current {
+    border-bottom: 2px solid #ffffff;
   }
 
   .menu__link {

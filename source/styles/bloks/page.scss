@@ -1,7 +1,9 @@
 .page {
+  position: relative;
   min-width: 320px;
+  max-width: 1200px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-size: $font-size;
   line-height: 24px;
   color: $font-color;
@@ -10,13 +12,12 @@
 
 .page__header {
   position: relative;
-  width: 320px;
   margin: 0 auto;
 }
 
 .page__main {
-  width: 320px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .page__footer {
