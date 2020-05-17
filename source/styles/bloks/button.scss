@@ -1,16 +1,26 @@
 .button--download {
   display: block;
   width: 280px;
-  height: 56px;
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 0 auto;
   text-align: center;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   border: 3px solid #ffffff;
   border-radius: 50px;
   background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    color: $hover-color;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: $active-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

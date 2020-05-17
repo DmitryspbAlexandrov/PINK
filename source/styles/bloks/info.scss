@@ -1,10 +1,12 @@
 .info {
+  position: relative;
+  align-items: center;
   min-width: 100%;
-  padding: 45px 20px 120px;
+  padding-top: 45px;
 }
 
 .info__title {
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
   font-size: 24px;
   font-weight: 300;
@@ -18,9 +20,202 @@
 
 .info__title--second {
   display: block;
-  margin-bottom: 120px;
+  margin-bottom: 25px;
 }
 
 .info__list {
+  position: relative;
+  padding: 0;
+  padding-top: 75px;
+  margin: 0;
   list-style: none;
+  background-color: #f2f2f2;
+  padding-bottom: 300px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 0 45%, 100% 0);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 280px;
+    height: 280px;
+    margin-left: -140px;
+    background-image: url("../img/backgrounds/screen3--mobile.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 158px 282px;
+  }
+}
+
+.info__item {
+  max-width: 400px;
+  padding: 0 30px 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info__item-header {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info__research {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .info {
+    padding-bottom: 70px;
+    }
+
+  .info__title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 43px;
+  }
+
+  .info__title--first {
+    margin-bottom: 10px;
+  }
+
+  .info__title--second {
+    width: 620px;
+    padding: 0 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .info__list {
+    position: relative;
+    padding: 80px 0 0 310px;
+    margin-bottom: 60px;
+
+    &::after {
+      left: 25%;
+      bottom: 0;
+      height: 481px;
+      background-image: url("../img/backgrounds/screen3--tablet.png");
+      background-size: 268px 481px;
+    }
+  }
+
+  .info__item {
+    max-width: 350px;
+    padding: 0 20px 10px 10px;
+    text-align: left;
+  }
+
+  .info__item-header {
+    font-weight: bold;
+  }
+
+  .info__research {
+    display: block;
+    min-height: 280px;
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/backgrounds/24--table.png");
+    background-repeat: no-repeat;
+    background-size: 238px 267px;
+    background-position: 10% top;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
+  .info__title {
+    font-size: 50px;
+    line-height: 57px;
+  }
+
+  .info__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-bottom: 70px;
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .info__item {
+    position: relative;
+    z-index: 1;
+    min-width: 280px;
+    padding: 360px 30px 50px;
+    padding-top: 360px;
+    font-size: 16px;
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 335px;
+      left: 5%;
+      width: 90%;
+      background-color: transparent;
+      box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    &--1 {
+      margin-left: 50px;
+      background-image: url("../../img/backgrounds/screen1--desc.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 187px 336px;
+    }
+
+    &--2 {
+      background-image: url("../../img/backgrounds/screen2--desc.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 187px 336px;
+
+      & .info__item-header {
+        width: 260px;
+        margin: 0 auto;
+      }
+    }
+
+    &--3 {
+      margin-right: 50px;
+      background-image: url("../../img/backgrounds/screen3--desc.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 187px 336px;
+    }
+  }
+
+  .info__item-header {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .info__research {
+    min-height: 430px;
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    background-image: url("../img/backgrounds/24--desc.png");
+    background-size: 298px 345px;
+    background-position: 10% 20px;
+  }
+
 }

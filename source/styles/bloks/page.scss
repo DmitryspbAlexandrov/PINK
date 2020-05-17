@@ -4,14 +4,17 @@
   max-width: 1200px;
   padding: 0;
   margin: 0 auto;
+  font-family: "OpenSans", sans-serif;
   font-size: $font-size;
   line-height: 24px;
   color: $font-color;
   background-color: #ffffff;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.6);
 }
 
 .page__header {
   position: relative;
+  max-width: 1200px;
   margin: 0 auto;
 }
 

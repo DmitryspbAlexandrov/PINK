@@ -1,0 +1,54 @@
+@media (min-width: $tablet-width) {
+
+  .research--wrapper {
+    max-width: 840px;
+    padding: 40px 30px 30px 330px;
+    margin: 0 auto;
+  }
+
+  .research__header {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+  }
+
+  .research__description {
+    display: block;
+    padding: 10px 0 10px;
+    margin: 0;
+  }
+
+  .research__link {
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: $font-color--label;
+  }
+
+}
+
+@media (min-width: $desctop-width) {
+
+  .research--wrapper {
+    max-width: 840px;
+    padding: 90px 30px 30px 360px;
+    margin: 0 auto;
+  }
+
+  .research__header {
+    margin-bottom: 10px;
+  }
+
+  .research__description {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .research__link {
+    font-size: 16px;
+  }
+
+}

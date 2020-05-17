@@ -239,7 +239,7 @@
           <!--menu__toggle--closed button state -->
         </div>
 
-        <nav class="header__menu menu menu__list--closed">
+        <nav class="header__menu menu">
           <ul class="menu__list">
             <!--menu__list--closed close state-->
             <li class="menu__item menu__item--current">
@@ -265,7 +265,7 @@
       <section class="page__intro intro">
         <!--intro--opened when menu opened-->
         <h2 class="intro__header">Взгляните на жизнь иначе!</h2>
-        <a class="intro__link button--download">Скачать приложение</a>
+        <button type="button" class="intro__link button--download">Скачать приложение</button>
         <ul class="intro__list">
           <li class="intro__item intro__item--iphone"><span class="visually-hidden">приложение доступно на iphone</span></li>
           <li class="intro__item intro__item--android"><span class="visually-hidden">приложение доступно на android</span></li>
@@ -275,28 +275,30 @@
       </section>
 
       <section class="page__info info">
-        <h2 class="visually-hidden">О нашем приложении</h2>
-        <strong class="info__title"><span class="info__title--first">Устали от серости мегаполиса?</span>
-          <span class="info__title--second">Нам есть, что вам предложить!</span></strong>
-        <ul class="info__list">
-          <li class="info__item">
-            <h3 class="info__item-header">Поднимает настроение</h3>
-            <p class="info__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="info__item">
-            <h3 class="info__item-header">Меняет мир вокруг</h3>
-            <p class="info__item-description">Сделайте снимок и украсте его смайликом или текстовой подписью, что бы усилить эффект.</p>
-          </li>
-          <li class="info__item">
-            <h3 class="info__item-header">Заводит новых друзей</h3>
-            <p class="info__item-description">Ставте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых.</p>
-          </li>
-        </ul>
-        <div class="info__research">
-          <strong class="research__header">Эффект на 24 часа!</strong>
-          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длиться целые сутки!</p>
-          <a href="" class="research__link">Узнать больше об исследовании</a>
-        </div>
+          <h2 class="visually-hidden">О нашем приложении</h2>
+          <strong class="info__title"><span class="info__title--first">Устали от серости мегаполиса?</span>
+            <span class="info__title--second">Нам есть, что вам предложить!</span></strong>
+          <ul class="info__list">
+            <li class="info__item info__item--1">
+              <h3 class="info__item-header">Поднимает настроение</h3>
+              <p class="info__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="info__item info__item--2">
+              <h3 class="info__item-header">Меняет мир вокруг</h3>
+              <p class="info__item-description">Сделайте снимок и украсте его смайликом или текстовой подписью, что бы усилить эффект.</p>
+            </li>
+            <li class="info__item info__item--3">
+              <h3 class="info__item-header">Заводит новых друзей</h3>
+              <p class="info__item-description">Ставте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых.</p>
+            </li>
+          </ul>
+          <div class="info__research">
+            <div class="research--wrapper">
+              <strong class="research__header">Эффект на 24 часа!</strong>
+              <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длиться целые сутки!</p>
+              <a href="" class="research__link">Узнать больше об исследовании</a>
+            </div>
+          </div>
       </section>
 
       <section class="page__reviews reviews">
