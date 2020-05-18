@@ -1,0 +1,128 @@
+.slider__button {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slider__item {
+
+  &--2 {
+    display: none;
+  }
+
+  &--3 {
+    display: none;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 140px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.slider__toggle {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #bec2c7;
+
+  &--active {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border: 3px solid #283645;
+  }
+
+  &--active:hover {
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    background-color: $slider-color--hover;
+  }
+
+  &:active {
+    background-color: $slider-color--active;
+  }
+}
+
+@media (min-width: $desctop-width) {
+
+  .slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .slider__button {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background-color: $slider-color;
+    }
+
+    &--prev::before {
+      top: 10px;
+      left: 0;
+      transform: rotate(-45deg);
+    }
+
+    &--prev::after {
+      bottom: 10px;
+      left: 0;
+      transform: rotate(45deg);
+    }
+
+    &--next::before {
+      top: 10px;
+      right: 0;
+      transform: rotate(45deg);
+    }
+
+    &--next::after {
+      bottom: 10px;
+      right: 0;
+      transform: rotate(-45deg);
+    }
+
+    &--next:hover::before,
+    &--next:hover::after,
+    &--prev:hover::before,
+    &--prev:hover::after {
+      background-color: $slider-color--hover;
+    }
+
+    &--next:active::before,
+    &--next:active::after,
+    &--prev:active::before,
+    &--prev:active::after {
+      background-color: $slider-color--active;
+    }
+  }
+
+  .slider__toggles {
+    display: none;
+  }
+
+}

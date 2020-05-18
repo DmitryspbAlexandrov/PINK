@@ -302,25 +302,30 @@
       </section>
 
       <section class="page__reviews reviews">
-        <button class="reviews__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
-        <blockquote class="reviews__item">
-          <p class="reviews__comment">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-          <cite class="reviews__author">Николай Петров</cite>
-          <p class="reviews__author-description">25 лет, водитель трамвая</p>
-        </blockquote>
-        <blockquote class="reviews__item">
-          <p class="reviews__comment">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-          <cite class="reviews__author">Николай Петров</cite>
-          <p class="reviews__author-description">25 лет, все ещё водитель трамвая</p>
-        </blockquote>
-        <blockquote class="reviews__item">
-          <p class="reviews__comment">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-          <cite class="reviews__author">Николай Петров</cite>
-          <p class="reviews__author-description">25 лет, до сих пор водитель трамвая</p>
-        </blockquote>
-        <button class="reviews__next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+        <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
+        <div class="reviews__slider slider">
+          <button class="slider__button slider__button--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+          <div class="slider__list">
+            <blockquote class="reviews__item slider__item--1">
+              <p class="reviews__comment">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              <cite class="reviews__author">Николай Петров</cite>
+              <p class="reviews__author-description">25 лет, водитель трамвая</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item--2">
+              <p class="reviews__comment">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              <cite class="reviews__author">Николай Петров</cite>
+              <p class="reviews__author-description">25 лет, все ещё водитель трамвая</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item--3">
+              <p class="reviews__comment">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              <cite class="reviews__author">Николай Петров</cite>
+              <p class="reviews__author-description">25 лет, до сих пор водитель трамвая</p>
+            </blockquote>
+          </div>
+          <button class="slider__button slider__button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+        </div>
         <p class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">1</span></button>
           <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
@@ -330,14 +335,14 @@
 
       <section class="page__price price">
         <h2 class="visually-hidden">Платные функции приложения</h2>
-        <table class="price__table">
+        <table class="price__table table">
           <tr>
             <th class="table__header--hidden"></th>
             <th class="table__version">
               <strong class="table__header">База</strong>
               <p class="table__price">1,99 USD</p>
             </th>
-            <th class="table__version">
+            <th class="table__version table__version--hit">
               <strong class="table__header">Стандарт</strong>
               <p class="table__price">3,99 USD</p>
             </th>
@@ -400,7 +405,7 @@
       </section>
     </main>
 
-    <footer class="page__footer footer">
+    <footer class="page__footer footer footer--mobile">
       <a class="footer__logo" href="#page__top">
         <picture>
           <source media="(min-width: 1200px)" srcset="">
