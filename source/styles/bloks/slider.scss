@@ -55,6 +55,29 @@
   }
 }
 
+.slider__table {
+  position: relative;
+}
+
+.slider__slides {
+  width: 300%;
+  transition: transform 0.8s ease;
+
+  &--wrapper {
+    padding: 0 20px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .slider__table {
+    display: table;
+    width: 100%;
+  }
+
+}
+
 @media (min-width: $desctop-width) {
 
   .slider {
