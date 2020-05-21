@@ -1,0 +1,24 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.copyright__text {
+  padding-right: 15px;
+  font-weight: 300;
+}
+
+.copyright__link {
+  color: $logo-color--hover;
+
+  &:hover {
+    color: $font-color;
+  }
+
+  &:active {
+    color: $font-color;
+    opacity: 0.3;
+  }
+}
