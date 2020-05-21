@@ -61,6 +61,7 @@
   background-image: url("../../img/backgrounds/map--tablet.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: 660px 376px;
 
   &::before {
     content: '';
@@ -71,6 +72,17 @@
     height: 40px;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+
+    .contacts__map {
+      background-image: url("../../img/backgrounds/map--tablet@2x.jpg");
+    }
   }
 }
 
@@ -96,12 +108,24 @@
   .contacts__map {
     min-height: 375px;
     background-image: url("../../img/backgrounds/map--desctop.jpg");
+    background-size: 1200px 504px;
 
     &::before {
       height: 70px;
     }
   }
 
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+
+    .contacts__map {
+      background-image: url("../../img/backgrounds/map--desctop@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: $desctop-width) {
