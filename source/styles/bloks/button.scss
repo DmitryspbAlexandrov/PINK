@@ -23,6 +23,16 @@
   }
 }
 
+.button--like {
+  width: 13px;
+  height: 12px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: #d22856;
+}
+
 @media (min-width: $tablet-width) {
 
   .button--download {
