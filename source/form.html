@@ -10,8 +10,7 @@
 </head>
 
 <body class="page">
-
-  <header class="page__header header header--second">
+  <header class="page__header header header__second">
     <!--header--open to opened menu-->
     <div class="header--wrapper">
       <div class="header__top">
@@ -36,14 +35,14 @@
       <nav class="header__menu menu">
         <ul class="header__list menu__list">
           <!--menu__list--closed close state-->
-          <li class="menu__item menu__item--current">
+          <li class="menu__item">
             <a href="index.html" class="menu__link">Главная</a>
           </li>
-          <li class="menu__item">
-            <a href="photo.html" class="menu__link">Фотографии</a>
+          <li class="menu__item menu__item--current">
+            <a class="menu__link">Фотографии</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__item--current">Конкурс</a>
+            <a href="form.html" class="menu__link">Конкурс</a>
           </li>
           <li class="menu__item">
             <a href="https://htmlacademy.ru/" class="menu__link">HTML Academy</a>
@@ -51,167 +50,178 @@
         </ul>
       </nav>
     </div>
+    <h1 class="form__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
 
   <main class="page__main">
     <section class="form">
-      <div class="form__header--wrapper"">
-         <h1 class=" form__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </div>
-      <p class="form__description">
+      <h2 class="visually-hidden">Присылай свои фотографии, расскажи историю и выйграй приз!</h2>
+      <p class=" form__description">
         Поделатиесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста,
         заполните форму ниже:
       </p>
       <form class="form__sing-up" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__section form__section-user">
-          <legend class="visually-hidden">Ваше имя</legend>
-          <div class="user__wrapper">
-            <p class="form__item form__item-user">
-              <label>
-                <p class="form__label form__label--left">Фамилия:</p>
-                <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
-              </label>
-            </p>
-            <p class="form__item form__item-user">
-              <label>
-                <p class="form__label form__label--left">Имя:</p>
-                <input class="form__input" type="text" name="name" placeholder="Укажите ваше имя*" required>
-              </label>
-            </p>
-            <p class="form__item form__item-user">
-              <label>
-                <p class="form__label form__label--left">Отчество:</p>
-                <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-              </label>
-            </p>
-          </div>
+          <legend class="form__title form__title--user">Ваше имя</legend>
+          <label class="form__item form__item-user">
+            <span class="form__label form__label--left">Фамилия:</span>
+            <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
+          </label>
+          <label class="form__item form__item-user">
+            <span class="form__label form__label--left">Имя:</span>
+            <input class="form__input" type="text" name="name" placeholder="Укажите ваше имя*" required>
+          </label>
+          <label class="form__item form__item-user">
+            <span class="form__label form__label--left">Отчество:</span>
+            <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+          </label>
         </fieldset>
-        <fieldset class="form__section">
-          <legend class="form__title">С каким приложением путешествовали?</legend>
+        <fieldset class="form__section form__section--app">
+          <legend class="form__title form__title--app">С каким приложением путешествовали?</legend>
           <ul class="form__list--radio">
             <li class="form__list-item">
               <label>
-                <input class="form__radio visually-hidden" type="radio" name="iOS" checked>
+                <input class="radio visually-hidden" type="radio" name="app" checked>
                 <span class="button__radio"></span>
-                <p class="form__radio-name">Pink для iOS</p>
+                <span class="form__radio-name">Pink для iOS</span>
               </label>
             </li>
             <li class="form__list-item">
               <label>
-                <input class="form__radio visually-hidden" type="radio" name="Android">
+                <input class="radio visually-hidden" type="radio" name="app">
                 <span class="button__radio"></span>
-                <p class="form__radio-name">Pink на Android</p>
+                <span class="form__radio-name">Pink на Android</span>
               </label>
             </li>
             <li class="form__list-item">
               <label>
-                <input class="form__radio visually-hidden" type="radio" name="Windows">
+                <input class="radio visually-hidden" type="radio" name="app">
                 <span class="button__radio"></span>
-                <p class="form__radio-name">Windows Phone</p>
+                <span class="form__radio-name">Windows Phone</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__section">
-          <legend class="form__title">Контактная информация</legend>
+        <fieldset class="form__section form__section--contacts">
+          <legend class="form__title form__title--contacts">Контактная информация</legend>
           <div class="contacts--wrapper">
-            <p class="form__item form__item--phone">
-              <label>
-                <input class="form__input" type="text" name="tel" placeholder="Номер, пожалуйста">
-                <p class="form__label form__label--bottom">Номер телефона</p>
-              </label>
-            </p>
-            <p class="form__item form__item--email">
-              <label>
-                <input class="form__input" type="text" name="email" placeholder="Введите почту*" required>
-                <p class="form__label form__label--bottom">Адрес почты</p>
-              </label>
-            </p>
+            <label class="form__item form__item--phone">
+              <input class="form__input form__input--contacts" type="text" name="tel" placeholder="Номер, пожалуйста">
+              <span class="form__label">Номер телефона</span>
+            </label>
+            <label class="form__item form__item--email">
+              <input class="form__input form__input--contacts" type="text" name="email" placeholder="Введите почту*"
+                required>
+              <span class="form__label">Адрес почты</span>
+            </label>
           </div>
         </fieldset>
-        <fieldset class="form__section">
-          <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+        <fieldset class="form__section form__section--achievements">
+          <legend class="form__title form__title--achievements">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form__list--check">
             <li class="form__list-item">
               <label>
-                <input class="form__check visually-hidden" type="checkbox" name="shark">
-                <span class="form__check--button"></span>
-                <p class="form__check-name">Сделал селфи с акулой</p>
+                <input class="check visually-hidden" type="checkbox" name="shark" checked>
+                <span class="check__button"></span>
+                <span class="form__check-name">Сделал селфи с акулой</span>
               </label>
             </li>
             <li class="form__list-item">
               <label>
-                <input class="form__check visually-hidden" type="checkbox" name="burnt">
-                <span class="form__check--button"></span>
-                <p class="form__check-name">Обгорел на пляже</p>
+                <input class="check visually-hidden" type="checkbox" name="burnt" checked>
+                <span class="check__button"></span>
+                <span class="form__check-name">Обгорел на пляже</span>
               </label>
             </li>
             <li class="form__list-item">
               <label>
-                <input class="form__check visually-hidden" type="checkbox" name="Noris">
-                <span class="form__check--button"></span>
-                <p class="form__check-name">Видел Чака Норриса</p>
+                <input class="check visually-hidden" type="checkbox" name="Noris">
+                <span class="check__button"></span>
+                <span class="form__check-name">Видел Чака Норриса</span>
               </label>
             </li>
             <li class="form__list-item">
               <label>
-                <input class="form__check visually-hidden" type="checkbox" name="souvenirs">
-                <span class="form__check--button"></span>
-                <p class="form__check-name">Накупил сувениров</p>
+                <input class="check visually-hidden" type="checkbox" name="souvenirs">
+                <span class="check__button"></span>
+                <span class="form__check-name">Накупил сувениров</span>
               </label>
             </li>
             <li class="form__list-item">
               <label>
-                <input class="form__check visually-hidden" type="checkbox" name="tower">
-                <span class="form__check--button"></span>
-                <p class="form__check-name">Удержал башню</p>
+                <input class="check visually-hidden" type="checkbox" name="tower" checked>
+                <span class="check__button"></span>
+                <span class="form__check-name">Удержал башню</span>
               </label>
             </li>
             <li class="form__list-item">
               <label>
-                <input class="form__check visually-hidden" type="checkbox" name="destroy">
-                <span class="form__check--button"></span>
-                <p class="form__check-name">Разгромил отель</p>
+                <input class="check visually-hidden" type="checkbox" name="destroy">
+                <span class="check__button"></span>
+                <span class="form__check-name">Разгромил отель</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__section">
-          <legend class="form__title">Опишите сови эмоции</legend>
+        <fieldset class="form__section form__section--description">
+          <legend class="form__title form__title--description">Опишите сови эмоции</legend>
           <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="button button__form" type="submit">Отправить форму</button>
-        <div class="form__footnote">
-          <p><span class="form__required">*</span>- обязательные для заполнения поля</p>
+        <div class="form__section--bottom">
+          <button class="button button__form" type="submit">Отправить форму</button>
+          <div class="form__footnote">
+            <p class="form__required"><span class="form__required--asterisk">*</span>- обязательные для <span
+                class="form__required--desc">заполнения
+                поля</span></p>
+          </div>
         </div>
       </form>
     </section>
   </main>
 
   <footer class="page__footer footer">
-    <a class="footer__logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="">
-        <source media="(min-width: 768px)" srcset="">
-        <img class="page-header__logo-image" src="" width="147" height="40" alt="Pink">
-      </picture>
-      <span class="visually-hidden">на главную страницу</span>
-    </a>
-    <ul class="footer__social-contacts">
-      <li class="footer__social--twitter">
-        <a href="https://twitter.com/"><span class="visually-hidden">Мы в твиттере</span></a>
-      </li>
-      <li class="footer__social--facebook">
-        <a href="https://www.facebook.com/"><span class="visually-hidden">Мы в фейсбуке</span></a>
-      </li>
-      <li class="footer__social--youtube">
-        <a href="https://www.youtube.com/"><span class="visually-hidden">Мы на ютубе</span></a>
-      </li>
-    </ul>
-    <div class="footer__copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span
-          class="visually-hidden">HTML Academy</span></a>
+    <div class="footer--wrapper">
+      <a class="footer__logo" href="#page__top">
+        <span class="visually-hidden">на главную страницу</span>
+        <svg class="footer__logo--mt" height="40" width="147">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-footer-logo--mt"></use>
+        </svg>
+        <svg class="footer__logo--desctop" height="40" width="147">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-footer-logo--desc"></use>
+        </svg>
+      </a>
+      <ul class="footer__social-list social-list">
+        <li class="social__item social__item--twitter">
+          <a class="social__link" href="https://twitter.com/"><span class="visually-hidden">Мы в твиттере</span>
+            <svg class="social__contacts" height="14" width="18">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-twetter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--facebook">
+          <a class="social__link" href="https://twitter.com/"><span class="visually-hidden">Мы в фейсбуке</span>
+            <svg class="social__contacts" height="18" width="9">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--youtube">
+          <a class="social__link" href="https://twitter.com/"><span class="visually-hidden">Мы на ютубе</span>
+            <svg class="social__contacts" height="15" width="13">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span
+            class="visually-hidden">HTML Academy</span>
+          <svg class="copyright__contacts" height="34" width="27">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-HTMLA"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 

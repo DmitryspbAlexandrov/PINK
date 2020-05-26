@@ -1,0 +1,218 @@
+.form__sing-up {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__header {
+  padding: 0 45px;
+  margin: 0;
+  margin-top: 35px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.form__description {
+  padding: 50px 20px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form__section {
+  position: relative;
+  padding: 45px 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.form__section--user {
+  order: 0;
+  background-color: #ffffff;
+}
+
+.form__title--user {
+  visibility: hidden;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: $font-color--label;
+}
+
+.form__input {
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 2px solid $border-color;
+
+  &::-webkit-input-placeholder {
+    color: $font-color;
+  }
+
+  &:hover {
+    border-color: $border-color--hover;
+  }
+
+  &:active {
+    border-color: $border-color--active;
+  }
+}
+
+.form__section--app {
+  order: 3;
+  padding-top: 110px;
+  background-color: #f2f2f2;
+}
+
+.form__title--app {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  margin-left: -90px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-color--label;
+}
+
+.form__list--radio {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form__list-item {
+  position: relative;
+  padding: 25px 0 25px 70px;
+  font-size: 18px;
+}
+
+.form__radio-name {
+  display: block;
+  cursor: pointer;
+}
+
+.form__section--contacts {
+  order: 2;
+  padding-top: 0;
+}
+
+.form__title--contacts {
+  visibility: hidden;
+}
+
+.form__item--phone,
+.form__item--email {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input--contacts {
+  order: 1;
+}
+
+.form__label {
+  order: 0;
+}
+
+.form__section--achievements {
+  order: 1;
+  background-color: #f2f2f2;
+  padding-top: 115px;
+}
+
+.form__title--achievements {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  width: 240px;
+  padding: 0;
+  margin: 0;
+  margin-left: -120px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-color--label;
+}
+
+.form__list--check {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form__check-name {
+  cursor: pointer;
+}
+
+.form__section--description {
+  order: 4;
+  padding-top: 70px;
+}
+
+.form__title--description {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  margin-left: -100px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-color--label;
+}
+
+.form__textarea {
+  padding: 20px;
+  width: 100%;
+  min-height: 200px;
+  border: 2px solid $border-color;
+  background-color: #ffffff;
+  resize: none;
+
+  &:hover {
+    border-color: $border-color--hover;
+  }
+
+  &:active {
+    border-color: $border-color--active;
+  }
+
+  &::-webkit-input-placeholder {
+    font-size: 18px;
+    color: $font-color;
+  }
+}
+
+.form__section--bottom {
+  order: 5;
+  padding: 0 20px 20px;
+}
+
+.form__required {
+  padding: 0;
+  margin: 0;
+  margin-top: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__required--asterisk {
+  color: $font-color--label;
+}
+
+.form__required--desc {
+  display: none;
+}

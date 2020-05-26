@@ -89,6 +89,101 @@
   }
 }
 
+//radio
+
+.button__radio {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 2px solid $border-color;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.radio:hover+.button__radio {
+  border-color: $border-color--hover;
+}
+
+.radio:active+.button__radio {
+  border-color: $border-color--active;
+}
+
+.radio:checked+.button__radio::before {
+  border-radius: 50%;
+  background-color: $border-color--active;
+}
+
+//checkbox
+
+.check__button {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 2px solid $border-color;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.check:hover+.check__button {
+  border-color: $border-color--hover;
+}
+
+.check:active+.check__button {
+  border-color: $border-color--active;
+}
+
+.check:checked+.check__button::before,
+.check:checked+.check__button::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: $border-color--active;
+  border-radius: 3px;
+}
+
+.check:checked+.check__button::before {
+  top: 17px;
+  left: 12px;
+  width: 22px;
+  transform: rotate(-45deg);
+}
+
+.check:checked+.check__button::after {
+  top: 20px;
+  left: 6px;
+  width: 12px;
+  transform: rotate(45deg);
+}
+
+.button__form {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $font-color--menu;
+  border: none;
+  border-radius: 3px;
+  background-color: $btn-form-color;
+}
+
 @media (min-width: $tablet-width) {
 
   .button--download {
