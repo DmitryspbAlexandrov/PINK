@@ -203,28 +203,29 @@ input[type=range]::-ms-track {
     margin: 0;
   }
 
-  .upload__section--right {
-    position: relative;
+  .upload__fieldset--wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 35px;
   }
 
   .upload-button--wrapper {
-    position: absolute;
-    top: 18px;
-    left: 0;
     flex-direction: column;
-    width: 10%;
+    width: 15%;
     padding: 0;
     margin: 0;
   }
 
   .upload__button {
-    margin-bottom: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 
   .upload__range--wrapper {
     width: 100%;
     padding: 0;
-    padding: 0 20px 0 50px;
+    padding: 0 20px 0 15px;
     margin: 0;
   }
 
@@ -274,7 +275,7 @@ input[type=range]::-ms-track {
   }
 
   .upload__range--wrapper {
-    padding-left: 70px;
+    padding-left: 30px;
   }
 
   .upload__item {
@@ -285,6 +286,8 @@ input[type=range]::-ms-track {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-top: auto;
+    padding: 0;
   }
 
   .upload__button--bottom {

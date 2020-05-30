@@ -190,12 +190,20 @@
     width: 300px;
   }
 
+  .button__form {
+    width: 50%;
+  }
+
 }
 
 @media (min-width: $desctop-width) {
 
   .button--download {
     font-size: 21px;
+  }
+
+  .button__form {
+    max-width: 300px;
   }
 
 }
