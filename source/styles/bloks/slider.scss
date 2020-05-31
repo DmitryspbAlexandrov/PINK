@@ -96,6 +96,10 @@
     background-color: transparent;
     border: none;
 
+    &:focus {
+      outline: none;
+    }
+
     &::before,
     &::after {
       content: '';
@@ -134,6 +138,13 @@
     &--prev:hover::before,
     &--prev:hover::after {
       background-color: $slider-color--hover;
+    }
+
+    &--next:focus::before,
+    &--next:focus::after,
+    &--prev:focus::before,
+    &--prev:focus::after {
+      background-color: $font-color--label;
     }
 
     &--next:active::before,

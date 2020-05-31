@@ -13,7 +13,8 @@
   cursor: pointer;
   outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $hover-color;
     background-color: #ffffff;
   }
@@ -31,6 +32,16 @@
   border: none;
   background-color: transparent;
   color: #d22856;
+
+  &:hover,
+  &:focus {
+    color: #8d949b;
+    outline: none;
+  }
+
+  &:active {
+    color: #d22856;
+  }
 }
 
 .button__range {
@@ -40,9 +51,15 @@
   color: #b5b9be;
   background-color: transparent;
   border: none;
+  outline: none;
 
-  &:hover {
+  &:hover .upload__icon,
+  &:focus .upload__icon {
     color: #8d949b;
+  }
+
+  &:active .upload__icon {
+    opacity: 0.3;
   }
 }
 
@@ -61,7 +78,8 @@
   background-color: transparent;
   outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #ffffff;
     background-color: #d22856;
   }
@@ -76,7 +94,8 @@
   color: #dddfe0;
   border: 3px solid #dddfe0;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #c1c4c8;
     border-color: #b5b9be;
     background-color: transparent;
@@ -113,7 +132,8 @@
   }
 }
 
-.radio:hover+.button__radio {
+.radio:hover+.button__radio,
+.radio:focus+.button__radio {
   border-color: $border-color--hover;
 }
 
@@ -141,7 +161,8 @@
   cursor: pointer;
 }
 
-.check:hover+.check__button {
+.check:hover+.check__button,
+.check:focus+.check__button {
   border-color: $border-color--hover;
 }
 
@@ -182,6 +203,42 @@
   border: none;
   border-radius: 3px;
   background-color: $btn-form-color;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-form-color--hover;
+  }
+
+  &:active {
+    color: #61b98f;
+  }
+}
+
+.button__alert {
+  display: block;
+  width: 100%;
+  height: 65px;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-color--menu;
+  background-color: $btn-form-color;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-form-color--hover;
+  }
+
+  &:active {
+    color: #61b98f;
+  }
 }
 
 @media (min-width: $tablet-width) {

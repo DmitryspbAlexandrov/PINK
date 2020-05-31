@@ -13,8 +13,10 @@
 .copyright__link {
   color: $logo-color--hover;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $font-color;
+    outline: none;
   }
 
   &:active {

@@ -328,6 +328,16 @@
   }
 
   .header__logo {
+    outline: none;
+
+    &:hover .header__logo--desctop,
+    &:focus .header__logo--desctop {
+      fill: $logo-color--hover;
+    }
+
+    &:active .header__logo--desctop {
+      fill: $logo-color--active;
+    }
 
     &--desctop {
       display: block;
@@ -335,14 +345,6 @@
       height: 40px;
       fill: $logo-color;
       color: $logo-color--hover;
-    }
-
-    &:hover .header__logo--desctop {
-      fill: $logo-color--hover;
-    }
-
-    &:active .header__logo--desctop {
-      fill: $logo-color--active;
     }
   }
 

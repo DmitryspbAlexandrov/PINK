@@ -2,9 +2,9 @@
   width: 100%;
   padding: 40px 20px 40px;
 
-  &--index {
+  /*&--index {
     display: none;
-  }
+  }*/
 }
 
 .footer--wrapper {
@@ -61,6 +61,15 @@
 }
 
 @media (min-width: $desctop-width) {
+
+  .footer__logo {
+
+    &:hover,
+    &:focus {
+      color: $logo-color--hover;
+      outline: none;
+    }
+  }
 
   .footer__logo--mt {
     display: none;

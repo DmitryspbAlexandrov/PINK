@@ -13,21 +13,28 @@
 .social__item {
   width: 52px;
   height: 52px;
+  line-height: 52px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.social__link {
+  display: block;
+  width: 52px;
+  height: 52px;
   border: 3px solid #eeeff0;
   line-height: 52px;
   text-align: center;
   border-radius: 50%;
-  cursor: pointer;
+  color: $logo-color--hover;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 3px solid #3e4a58;
+    outline: none;
   }
 
   &:active {
     opacity: 0.3;
   }
-}
-
-.social__link {
-  color: $logo-color--hover;
 }
