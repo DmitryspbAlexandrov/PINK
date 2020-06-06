@@ -2,9 +2,9 @@
   width: 100%;
   padding: 40px 20px 40px;
 
-  /*&--index {
+  &--index {
     display: none;
-  }*/
+  }
 }
 
 .footer--wrapper {
@@ -42,6 +42,10 @@
 
   .footer {
     padding: 35px 20px 35px;
+
+    &--index {
+      display: block;
+    }
   }
 
   .footer--wrapper {

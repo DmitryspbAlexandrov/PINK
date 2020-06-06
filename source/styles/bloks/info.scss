@@ -83,7 +83,7 @@
 
     .info__list {
       &::after {
-        background-image: url("../../img/backgrounds/screen3--mobile@2x.png");
+        background-image: url("../img/backgrounds/screen3--mobile@2x.png");
       }
     }
 
@@ -215,14 +215,14 @@
 
     &--1 {
       margin-left: 50px;
-      background-image: url("../../img/backgrounds/screen1--desc.png");
+      background-image: url("../img/backgrounds/screen1--desc.png");
       background-repeat: no-repeat;
       background-position: center top;
       background-size: 187px 336px;
     }
 
     &--2 {
-      background-image: url("../../img/backgrounds/screen2--desc.png");
+      background-image: url("../img/backgrounds/screen2--desc.png");
       background-repeat: no-repeat;
       background-position: center top;
       background-size: 187px 336px;
@@ -235,7 +235,7 @@
 
     &--3 {
       margin-right: 50px;
-      background-image: url("../../img/backgrounds/screen3--desc.png");
+      background-image: url("../img/backgrounds/screen3--desc.png");
       background-repeat: no-repeat;
       background-position: center top;
       background-size: 187px 336px;
@@ -262,21 +262,22 @@
     .info__item {
 
       &--1 {
-        background-image: url("../../img/backgrounds/screen1--desc@2x.png");
+        background-image: url("../img/backgrounds/screen1--desc@2x.png");
       }
 
       &--2 {
-        background-image: url("../../img/backgrounds/screen2--desc@2x.png");
+        background-image: url("../img/backgrounds/screen2--desc@2x.png");
       }
 
       &--3 {
-        background-image: url("../../img/backgrounds/screen3--desc@2x.png");
+        background-image: url("../img/backgrounds/screen3--desc@2x.png");
       }
     }
-  }
 
-  .info__research {
-    background-image: url("../img/backgrounds/24--desc@2x.png");
+    .info__research {
+      background-image: url("../img/backgrounds/24--desc@2x.png");
+    }
+
   }
 
 }
