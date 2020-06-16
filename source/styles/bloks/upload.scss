@@ -42,16 +42,13 @@
 }
 
 .upload__item {
+  display: none;
   padding: 0;
   margin: 25px 0;
 }
 
-.upload__item--fill {
-  display: none;
-}
-
-.upload__item--contrast {
-  display: none;
+.upload__item--show {
+  display: block;
 }
 
 input[type=range] {
@@ -238,6 +235,7 @@ input[type=range]::-ms-track {
   }
 
   .upload__item {
+    display: block;
     padding: 25px 0;
     margin: 0;
     border-bottom: 1px solid #dddfe0;

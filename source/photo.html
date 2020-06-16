@@ -400,19 +400,19 @@
               </legend>
               <div class="upload__fieldset--wrapper">
                 <div class="upload-button--wrapper">
-                  <button class="upload__button button__range button__range--active" type="button">
+                  <button class="upload__button button__range button__range--crop button__range--active" type="button">
                     <span class="visually-hidden">обрезание фотографии</span>
                     <svg class="upload__icon" height="44" width="44">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-crop"></use>
                     </svg>
                   </button>
-                  <button class="upload__button button__range" type="button">
+                  <button class="upload__button button__range button__range--fill" type="button">
                     <span class="visually-hidden">заливка фотографии</span>
                     <svg class="upload__icon" height="48" width="43">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-fill"></use>
                     </svg>
                   </button>
-                  <button class="upload__button button__range" type="button">
+                  <button class="upload__button button__range button__range--contr" type="button">
                     <span class="visually-hidden">контраст фотографии</span>
                     <svg class="upload__icon" height="32" width="32">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-contr"></use>
@@ -420,7 +420,7 @@
                   </button>
                 </div>
                 <div class="upload__range--wrapper">
-                  <label class="upload__item upload__item--crop">
+                  <label class="upload__item upload__item--crop upload__item--show">
                     <span class="visually-hidden">обрезание фотографии</span>
                     <input class="upload__input" type="range" name="crop" value="20" min="0" max="100" id="crop" />
                   </label>
